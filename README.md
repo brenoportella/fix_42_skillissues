@@ -20,6 +20,12 @@ If you don't see a dockbar (taskbar) like in windows and you want it, you can se
 You can customize it on the settings > apperance in the DOCK session.
 Feel free to explore the others extensions and customize your desktop environment.
 
+If you want put the Show aplications button on the extreme left side of the dock, use this command on terminal:
+
+ ```bash
+gsettings set org.gnome.shell.extensions.dash-to-dock show-apps-at-top true
+```
+
 Your desktop can look like this:
 ![image](https://github.com/user-attachments/assets/961f0efb-6051-4c62-b9ca-41cddafc2c7b)
 
