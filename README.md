@@ -1,8 +1,8 @@
 # Fix some 42 computer "issues"
 Fixing 42 skill issues (some apps).
-- [Display Scale](##Display-scale-100%-locked)
-- [Dock bar](##Dock-bar)
-- [VSCode with ZSH terminal](##Visual-Studio-Code-with-ZSH-terminal)
+- [Display Scale](##display-scale-100%-locked)
+- [Dock bar](##dock-bar)
+- [VSCode with ZSH terminal](##visual-studio-code-with-zsh-terminal)
 
 ### <br>
 ## Display scale 100% locked
