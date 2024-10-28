@@ -30,7 +30,7 @@ In the case you want to se a ZSH terminal on vscode, by default vscode on 42 com
 - Download the version .tar.gz x64 on https://code.visualstudio.com/download
 - Now you have to extract this files. I suggest to you create a folder on home directory, like "app" or something like that
 - Put the VSCode-linux-x64 folder inside the app folder
-- Donwload this [image](https://github.com/user-attachments/assets/ff30166c-2ae6-463b-ae28-1b04e7bf5160) and put inside the VSCode-linux-x64 folder
+- Download this [image](https://github.com/user-attachments/assets/ff30166c-2ae6-463b-ae28-1b04e7bf5160) and put inside the VSCode-linux-x64 folder
 
 - Now on your terminal run this command:
 ```bash
