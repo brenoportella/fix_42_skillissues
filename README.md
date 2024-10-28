@@ -2,6 +2,7 @@
 Fixing 42 skill issues (some apps).
 - [Display Scale](##display-scale-100%-locked)
 - [Dock bar](##dock-bar)
+- [Installing Obsidian](##installing-obsidian)
 - [VSCode with ZSH terminal](##visual-studio-code-with-zsh-terminal)
 
 ### <br>
@@ -21,6 +22,48 @@ Feel free to explore the others extensions and customize your desktop environmen
 
 Your desktop can look like this:
 ![image](https://github.com/user-attachments/assets/961f0efb-6051-4c62-b9ca-41cddafc2c7b)
+
+### <br>
+## Installing Obsidian
+If you want to use Obsidian on the 42 computers, you can use it by Appimage.
+- Download the [Appimage](https://obsidian.md/download).
+- Put it in some good directory (I suggest create the "app" folder on home and insert it there).
+- Create a folder (Obsidian) and put the Appimage and the icon there.
+- Open the terminal in this directory and execute:
+```bash
+chmod u+x Obsidian-<Version>.AppImage
+```
+Change the "<Version>" to your actual version (is like the file's name). Now you can run it.
+
+- In the terminal use this command:
+```bash
+  nano ~/.local/share/applications/obsidian.desktop
+```
+- Put this on the nano file:
+```
+[Desktop Entry]
+Name=Obsidian
+Exec=/home/bportell/app/Obsidian/Obsidian-1.7.4.AppImage
+Icon=/home/bportell/app/Obsidian/obsidian-icon.png
+Type=Application
+Categories=Utility;
+Terminal=false
+```
+- Save the file (ctrl+o) and close it (ctrl+x)
+- Execute this command in terminal:
+```bash
+chmod +x ~/.local/share/applications/obsidian.desktop
+```
+- Execute this command in terminal:
+```bash
+update-desktop-database ~/.local/share/applications
+```
+Now you can use Obsidian on 42 computer.
+
+You can also do it for any other Appimage.
+
+![image](https://github.com/user-attachments/assets/99bf60f2-d557-4433-977b-7da6c919329c)
+
 
 ### <br>
 ## Visual Studio Code with ZSH terminal
