@@ -39,7 +39,7 @@ If you want to use Obsidian on the 42 computers, you can use it by Appimage.
 ```bash
 chmod u+x Obsidian-<Version>.AppImage
 ```
-Change the "<Version>" to your actual version (is like the file's name). Now you can run it.
+Change the "&lt;Version&gt;" to your actual version (is like the file's name). Now you can run it.
 
 - In the terminal use this command:
 ```bash
