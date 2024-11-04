@@ -121,5 +121,6 @@ pip install --user virtualenv
 ```
 Before running the a.sh make sure you don't have any alias in your .zshrc or .bashrc already named "francinette" or "paco". If you do, delete them or rename them, whatever you prefer.
 - Now do a `bash a.sh`
-<br>And now you can enjoy (or suffer with) the tester.
+
+And now you can enjoy (or suffer with) the tester.
 (For instructions on how to you the tester please refer to the tester's page linked previously)
