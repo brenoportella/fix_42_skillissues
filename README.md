@@ -4,6 +4,7 @@ Fixing 42 skill issues (some apps).
 - [Dock bar](##dock-bar)
 - [Installing Obsidian](##installing-obsidian)
 - [VSCode with ZSH terminal](##visual-studio-code-with-zsh-terminal)
+- [Installing Francinette](##installing-francinette)
 
 ### <br>
 ## Display scale 100% locked
@@ -102,4 +103,10 @@ OBS. change the Exec and Icon path to your actual path to /VSCode-linux-64/code
 - Now run this command on terminal:
 ```bash
   update-desktop-database ~/.local/share/applications/
+```
+### <br>
+## Installing Francinette
+If you're having trouble installing the [Francinette Tester](https://github.com/xicodomingues/francinette) because you don't have sudo permissions (and [francinette image](https://github.com/WaRtr0/francinette-image) didn't work either for some reason), just go to your home in the terminal and use this command:
+```bash
+curl -fsSL https://raw.github.com/xicodomingues/francinette/master/bin/install.sh > a.sh
 ```
