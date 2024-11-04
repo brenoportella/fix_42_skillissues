@@ -111,7 +111,7 @@ If you're having trouble installing the [Francinette Tester](https://github.com/
 ```bash
 curl -fsSL https://raw.github.com/xicodomingues/francinette/master/bin/install.sh > a.sh
 ```
-Doing so will create an a.sh file which then you need to edit by running the following command:
+Doing so will create an a.sh file which you'll then need to edit by running the following command:
 ```bash
 sed -i '41s/venv/virtualenv/' a.sh
 ```
@@ -122,5 +122,5 @@ pip install --user virtualenv
 Before running the a.sh make sure you don't have any alias in your .zshrc or .bashrc already named "francinette" or "paco". If you do, delete them or rename them, whatever you prefer.
 - Now do a `bash a.sh`
 
-And now you can enjoy (or suffer with) the tester.
-(For instructions on how to you the tester please refer to the tester's page linked previously)
+And just like that, you can finally enjoy (or suffer with) the tester.
+(For instructions on how to use the tester, please refer to the tester's page linked previously)
