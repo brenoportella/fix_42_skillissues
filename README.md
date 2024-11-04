@@ -106,7 +106,18 @@ OBS. change the Exec and Icon path to your actual path to /VSCode-linux-64/code
 ```
 ### <br>
 ## Installing Francinette
-If you're having trouble installing the [Francinette Tester](https://github.com/xicodomingues/francinette) because you don't have sudo permissions (and [francinette image](https://github.com/WaRtr0/francinette-image) didn't work either for some reason), just go to your home in the terminal and use this command:
+If you're having trouble installing the [Francinette Tester](https://github.com/xicodomingues/francinette) because you don't have sudo permissions (and [francinette image](https://github.com/WaRtr0/francinette-image) didn't work either for some reason),
+- Go to your **/home/(user)** in the terminal and use this command:
 ```bash
 curl -fsSL https://raw.github.com/xicodomingues/francinette/master/bin/install.sh > a.sh
 ```
+Doing so will create an a.sh file which then you need to edit by running the following command:
+```bash
+sed -i '41s/venv/virtualenv/' a.sh
+```
+- Then install the virtualenv like so:
+```bash
+pip install --user virtualenv
+```
+Now before running the a.sh make sure you don't have any alias in your .zshrc or .bashrc already named "francinette" or "paco". If you do, delete them or rename them, whatever you prefer.
+And now you can finally `bash a.sh` and enjoy (or suffer with) the tester. For instructions on how to you the tester please refer to the tester's page linked previously.
