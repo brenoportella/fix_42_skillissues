@@ -4,6 +4,7 @@ Fixing 42 skill issues (some apps).
 - [Dock bar](##dock-bar)
 - [Installing Obsidian](##installing-obsidian)
 - [VSCode with ZSH terminal](##visual-studio-code-with-zsh-terminal)
+- [Installing Francinette](##installing-francinette)
 
 ### <br>
 ## Display scale 100% locked
@@ -103,3 +104,23 @@ OBS. change the Exec and Icon path to your actual path to /VSCode-linux-64/code
 ```bash
   update-desktop-database ~/.local/share/applications/
 ```
+### <br>
+## Installing Francinette
+If you're having trouble installing the [Francinette Tester](https://github.com/xicodomingues/francinette) because you don't have sudo permissions (and [francinette image](https://github.com/WaRtr0/francinette-image) didn't work either for some reason),
+- Go to your **/home/(user)** in the terminal and use this command:
+```bash
+curl -fsSL https://raw.github.com/xicodomingues/francinette/master/bin/install.sh > a.sh
+```
+Doing so will create an a.sh file which you'll then need to edit by running the following command:
+```bash
+sed -i '41s/venv/virtualenv/' a.sh
+```
+- Then install the virtualenv like so:
+```bash
+pip install --user virtualenv
+```
+Before running the a.sh make sure you don't have any alias in your .zshrc or .bashrc already named "francinette" or "paco". If you do, delete them or rename them, whatever you prefer.
+- Now do a `bash a.sh`
+
+And just like that, you can finally enjoy (or suffer with) the tester.
+(For instructions on how to use the tester, please refer to the tester's page linked previously)
