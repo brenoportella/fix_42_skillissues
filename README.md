@@ -1,13 +1,13 @@
 # Fix some 42 computer "issues"
 Fixing 42 skill issues (some apps).
-- [Display Scale](#display-scale-100%-locked)
+- [Display Scale 100% Locked](#display-scale-100%-locked)
 - [Dock bar](#dock-bar)
 - [Installing Obsidian](#installing-obsidian)
 - [VSCode with ZSH terminal](#visual-studio-code-with-zsh-terminal)
 - [Installing Francinette](#installing-francinette)
 
 ### <br>
-## Display scale 100% locked
+## Display Scale 100% Locked
 If you are in the cluster 2 and your Scale is locked in 100%, use:
 
 ```bash
@@ -120,7 +120,9 @@ sed -i '41s/venv/virtualenv/' a.sh
 pip install --user virtualenv
 ```
 Before running the a.sh make sure you don't have any alias in your .zshrc or .bashrc already named "francinette" or "paco". If you do, delete them or rename them, whatever you prefer.
-- Now do a `bash a.sh`
-
+- Now do a:
+```bash
+bash a.sh
+```
 And just like that, you can finally enjoy (or suffer with) the tester.
-(For instructions on how to use the tester, please refer to the tester's page linked previously)
+<br>For instructions on how to use the tester, please refer to the [tester's github page](https://github.com/xicodomingues/francinette) (or your peers).
