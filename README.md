@@ -1,10 +1,10 @@
 # Fix some 42 computer "issues"
 Fixing 42 skill issues (some apps).
-- [Display Scale](##display-scale-100%-locked)
-- [Dock bar](##dock-bar)
-- [Installing Obsidian](##installing-obsidian)
-- [VSCode with ZSH terminal](##visual-studio-code-with-zsh-terminal)
-- [Installing Francinette](##installing-francinette)
+- [Display Scale](#display-scale-100%-locked)
+- [Dock bar](#dock-bar)
+- [Installing Obsidian](#installing-obsidian)
+- [VSCode with ZSH terminal](#visual-studio-code-with-zsh-terminal)
+- [Installing Francinette](#installing-francinette)
 
 ### <br>
 ## Display scale 100% locked
