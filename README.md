@@ -5,6 +5,7 @@ Fixing 42 skill issues (some apps).
 - [Installing Obsidian](#installing-obsidian)
 - [VSCode with ZSH terminal](#visual-studio-code-with-zsh-terminal)
 - [Installing Francinette](#installing-francinette)
+- [Installing Norminette](#installing-norminette)
 
 ### <br>
 ## Display Scale 100% Locked
@@ -126,3 +127,52 @@ bash a.sh
 ```
 And just like that, you can finally enjoy (or suffer with) the tester.
 <br>For instructions on how to use the tester, please refer to the [tester's github page](https://github.com/xicodomingues/francinette) (or your peers).
+
+### <br>
+## Installing Norminette
+GitHub: https://github.com/42School/norminette
+
+(I'll consider that you have either a Linux distribution or a WSL running)
+
+If you are working from home or even at school but piscines and exams are running in the clusters and you are bored to code but wanna do something about your school progress, the best thing to do is FIX THE F*CKING NORMINETTE.
+
+So, for that, we have the GitHub to install the norminette on your personal pc.
+
+There are a few ways to install, from the github repository, I personally recommend the virtual environment way, just because it feels cleaner to me. 
+
+You must have Python installed, so run something like:
+```bash
+python3 --version
+```
+If this command returns something like:
+```
+Python 3.XX.XX #the Xs must be some numbers
+```
+If you don't have it installed, you can run:
+```bash
+sudo apt install python3
+```
+With Python installed, you can run this:
+```bash
+python3 -m venv $HOME/.venv
+source $HOME/.venv/bin/activate
+python3 -m pip install --upgrade pip setuptools
+python3 -m pip install norminette
+echo "export PATH=\$PATH:$HOME/.venv/bin" >> $HOME/.${SHELL##/bin/}rc
+deactivate
+```
+After this, you must close all open terminals and when you reopen them, it should work like on the 42computers.
+
+In my case, I had trouble with the last line of this execution:
+```bash
+echo "export PATH=\$PATH:$HOME/.venv/bin" >> $HOME/.${SHELL##/bin/}rc
+```
+This command couldn't find my .zshrc in my home folder, so to fix it, I simply run the command:
+```bash
+echo "export PATH=\$PATH:$HOME/.venv/bin"
+```
+Copy the output from this and paste in my .zshrc (it can be like a .bashrc, which is basically your Shell interpreter config file).
+
+Now, after this, I closed all open terminals and when I reopened it, it was working like on the 42computers.
+
+If you are having any problems, ask some of your peers!!
